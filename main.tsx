@@ -17,6 +17,6 @@ const Hello = (props) => (
 console.log("Listening on http://localhost:8080");
 serve((req) => {
   const url = new URL(req.url);
-  const name = url.searchParams.get("name") ?? "zhengyong";
+  const name = url.searchParams.get("name") ?? "zhengyong2";
   return ssr(() => <Hello name={name} />);
 });
